@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Design Token Extractor</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <header><div class="logo">◆</div><div><div class="t">Design Token Extractor</div><div class="s" id="host">Ready</div></div></header>
+  <button id="run" class="primary">Extract from this page</button>
+  <div id="err" class="err" hidden></div>
+  <section id="res" hidden>
+    <div class="row"><span class="lbl">Mode</span><span id="mode" class="pill"></span><span class="lbl" style="margin-left:auto">Elements</span><span id="count"></span></div>
+    <h3>Colors</h3><div id="colors" class="sw"></div>
+    <h3>Fonts</h3><div id="fonts" class="list"></div>
+    <h3>Type scale</h3><div id="type" class="list"></div>
+    <h3>Radii</h3><div id="radii" class="chips"></div>
+    <h3>Spacing</h3><div id="spacing" class="chips"></div>
+    <h3>Shadows</h3><div id="shadows" class="list mono"></div>
+    <div class="actions">
+      <button id="dlSkill" class="primary">Download SKILL.md</button>
+      <button id="dlJson">Download JSON</button>
+      <button id="cpSkill">Copy SKILL.md</button>
+    </div>
+  </section>
+  <footer>Runs locally. No data leaves your browser.</footer>
+  <script src="extractor.js"></script>
+  <script src="skill.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
